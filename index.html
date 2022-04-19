@@ -7,6 +7,19 @@
 
 <h1>Welcome to my site :)</h1>
 <h1>I am eren</h1>
-  <h1>ezik thealoqqq</h1>
+  <h1 id="date"></h1>
 </body>
+  <script>
+    function day(date) {
+    var date1 = new Date();
+    var date2 = new Date(date2);
+
+    var difference = date1.getTime() - date2.getTime();
+    var day = Math.abs(Math. ceil(difference / (1000 * 3600 * 24)));
+
+    return day;
+  }
+  let x = day("05-01-2022")
+  document.getElementById("date").innerHTML = `Son ${x} GÜN! :) !!!`;
+  </script>
 </html>
