@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+  h1 {
+font-family: cursive;
+}
+</style>
+</head>
+<body>
+  <h1 id="date"></h1>
+  <script>
+    function day(date) {
+    var date1 = new Date();
+    var date2 = new Date(date);
+
+    var difference = date1.getTime() - date2.getTime();
+    var day = Math.abs(Math.ceil(difference / (1000 * 3600 * 24)));
+
+    return day;
+  }
+  let x = day("05-01-2022")
+  document.getElementById("date").innerHTML = `Son ${x} GÜN! :) !!!`;
+  </script>
+</body>
+</html>
